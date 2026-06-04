@@ -1,0 +1,10 @@
+{
+    "type": "extension",
+    "display_name": "Word Memorizer",
+    "version": "2.0.0",
+    "author": "Your Name",
+    "description": "等待AI回复时背单词的浮动面板，支持自定义词库导入，手机端优化。",
+    "js": "index.js",
+    "css": "style.css",
+    "loading_order": 100
+}
