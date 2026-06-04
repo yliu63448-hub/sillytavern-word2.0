@@ -1,0 +1,7 @@
+{
+  "name": "Word Memorizer",
+  "description": "等待AI回复时可背单词的浮动面板，支持自定义词库导入（自动识别单词、词性、释义），手机端优化。",
+  "version": "2.0.0",
+  "author": "yliu63448",
+  "url": "https://github.com/yliu63448-hub/sillytavern-word2.0"
+}
