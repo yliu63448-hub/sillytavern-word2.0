@@ -1,0 +1,226 @@
+#word-memorizer-panel {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 260px;
+    max-width: calc(100vw - 20px);
+    background: #1e1e2f;
+    border: 1px solid #4a4a6a;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    touch-action: none;
+}
+
+.word-memo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    background: #2a2a3c;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: move;
+    user-select: none;
+}
+
+.word-memo-header span {
+    font-weight: bold;
+    color: #c0b0ff;
+    font-size: 14px;
+}
+
+.word-memo-mode-btn {
+    background: #3a3a4e;
+    border: none;
+    color: #aaa;
+    padding: 4px 8px;
+    margin-left: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.word-memo-mode-btn.active {
+    background: #6b5ce7;
+    color: white;
+}
+
+.word-memo-close-btn {
+    background: transparent;
+    border: none;
+    color: #ff7b7b;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.word-memo-body {
+    padding: 12px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word-card {
+    text-align: center;
+    width: 100%;
+}
+
+.word-main {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e0d7ff;
+    margin-bottom: 6px;
+    word-break: break-word;
+}
+
+.word-phonetic {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.word-meaning {
+    font-size: 15px;
+    color: #cfc;
+    background: #2d2d3a;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 6px;
+    word-break: break-word;
+}
+
+.word-status {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #b0b0b0;
+}
+
+.test-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.word-memo-know-btn,
+.word-memo-unknown-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.word-memo-know-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.word-memo-unknown-btn {
+    background: #f44336;
+    color: white;
+}
+
+.word-memo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    background: #2a2a3c;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.word-memo-footer span {
+    font-size: 11px;
+    color: #aaa;
+}
+
+.word-memo-footer button {
+    background: #4a4a6a;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+#word-memorizer-btn {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    color: #b5a0ff;
+    display: inline-block;
+    padding: 4px;
+}
+
+#word-memorizer-btn:hover {
+    transform: scale(1.15);
+    color: #dcc8ff;
+}
+
+/* 导入模态框 */
+.word-import-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 30000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+}
+
+.word-import-content {
+    width: 90%;
+    max-width: 400px;
+    background: #2a2a3c;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+.word-import-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #3a3a4e;
+    font-weight: bold;
+    color: #c0b0ff;
+}
+
+.word-import-content textarea {
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+    background: #1e1e2f;
+    border: none;
+    color: #ddd;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.word-import-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 10px;
+}
+
+@media (min-width: 500px) {
+    #word-memorizer-panel {
+        width: 280px;
+    }
+}
