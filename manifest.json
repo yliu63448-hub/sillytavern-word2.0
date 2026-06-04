@@ -1,0 +1,10 @@
+{
+    "type": "extension",
+    "display_name": "Word Memorizer",
+    "version": "3.0.0",
+    "author": "yliu63448-hub",
+    "description": "扇贝式单词记忆面板，支持自定义词库导入、今日任务、日间/夜间模式，手机端优化。",
+    "js": "index.js",
+    "css": "style.css",
+    "loading_order": 100
+}
